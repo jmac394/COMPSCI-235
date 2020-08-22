@@ -13,7 +13,6 @@ def print_urls_for_views():
         print('URL for show_post view:           ', url_for('show_post', post_id=6))
         print('URL for show_subpath view:        ', url_for('show_subpath', subpath='abc/def'))
 
-
 def print_request_info():
     with app.test_request_context('hello?name=Ed', method='GET'):
         print('Request path:                     ', request.path)
